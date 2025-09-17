@@ -1,8 +1,8 @@
 import math  # Importamos el módulo math para usar funciones matemáticas
 
-# ==========================
+# =========================
 # Definición de funciones
-# ==========================
+# =========================
 
 def sumar(a, b):
     """Devuelve la suma de dos números"""
