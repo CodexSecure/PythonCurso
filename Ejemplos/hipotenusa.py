@@ -25,9 +25,9 @@ def hipotenusa_hypot():
     c = math.hypot(a, b)  # función especial para hipotenusa
     print("Opción 3 → La hipotenusa es:", c)
 
-# ==========================
+# =========================
 # Ejecución de ejemplos
-# ==========================
+# =========================
 
 hipotenusa_op()     # Calcula con a=3, b=4 usando **
 hipotenusa_sqrt()   # Calcula con a=3, b=4 usando sqrt()
