@@ -12,5 +12,5 @@ def fibonacci(n):
     
     return resultado  # Devolvemos la lista con la secuencia generada
 
-# Ejemplo: obtener los primeros 10 números de Fibonacci
+# Ejemplo: obtener los primeros 20 números de Fibonacci
 print(fibonacci(20))
