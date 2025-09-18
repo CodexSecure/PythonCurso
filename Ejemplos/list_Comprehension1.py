@@ -23,9 +23,9 @@ for x in fruits:
 print("Con bucle for clásico:", newlist1)
 
 
-# =========================================
+# ========================================
 # MÉTODO 2: Usando list comprehension
-# =========================================
+# ========================================
 # La misma lógica que el bucle, pero resumida en una sola línea:
 # - "x if x != 'banana' else 'orange'" -> expresión condicional
 # - "for x in fruits" -> recorre la lista original
