@@ -31,7 +31,7 @@ cyber-log-monitor/
 ```powershell
 git clone https://github.com/tuusuario/cyber-log-monitor.git
 cd cyber-log-monitor
-
+---
 ### 2. Crear entorno virtual
 python -m venv venv
 .\venv\Scripts\Activate.ps1
