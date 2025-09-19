@@ -1,4 +1,4 @@
-# 🔐 Cyber Log Monitor
+<em> # 🔐 Cyber Log Monitor </em>
 
 Cyber Log Monitor es un proyecto de **ciberseguridad en Python** que analiza intentos de login fallidos en un archivo de logs simulado y muestra resultados tanto en **consola** como en un **dashboard web interactivo** con Streamlit.
 
@@ -31,7 +31,7 @@ cyber-log-monitor/
 ```powershell
 git clone https://github.com/tuusuario/cyber-log-monitor.git
 cd cyber-log-monitor
----
+```
 ### 2. Crear entorno virtual
 python -m venv venv
 .\venv\Scripts\Activate.ps1
