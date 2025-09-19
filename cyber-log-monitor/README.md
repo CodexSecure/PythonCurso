@@ -24,3 +24,31 @@ cyber-log-monitor/
 │── dashboard.py # dashboard con Streamlit
 │── requirements.txt # dependencias
 │── README.md # documentación
+
+## ⚙️ Instalación y uso (Windows)
+
+### 1. Clonar el repositorio
+```powershell
+git clone https://github.com/tuusuario/cyber-log-monitor.git
+cd cyber-log-monitor
+
+### 2. Crear entorno virtual
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+
+### 3. Instalar dependencias
+pip install -r requirements.txt
+
+### 4. Ejecutar análisis en consola
+python main.py
+
+### 5. Ejecutar el dashboard web
+streamlit run dashboard.py
+
+🛡️ Notas de seguridad
+
+Los logs incluidos son falsos (no datos reales).
+
+No subas registros sensibles de sistemas reales a GitHub.
+
+Este proyecto es educativo y pensado para prácticas de portafolio.
