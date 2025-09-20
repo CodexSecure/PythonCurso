@@ -9,6 +9,7 @@ venv/
 
 # Logs and export files
 *.docx
+*.pbix
 #*.log
 #*.csv
 #*.xlsx
