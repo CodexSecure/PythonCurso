@@ -8,7 +8,7 @@ venv/
 .env/
 
 # Logs and export files
-.docx
+*.docx
 #*.log
 #*.csv
 #*.xlsx
