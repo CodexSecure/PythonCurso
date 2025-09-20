@@ -8,10 +8,11 @@ venv/
 .env/
 
 # Logs and export files
-*.log
-*.csv
-*.xlsx
-logs/
+
+#*.log
+#*.csv
+#*.xlsx
+#logs/
 
 # IDEs
 .vscode/
