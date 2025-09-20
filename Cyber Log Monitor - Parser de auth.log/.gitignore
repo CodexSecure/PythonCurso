@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment
+venv/
+.env
+.env/
+
+# Logs and export files
+*.log
+*.csv
+*.xlsx
+logs/
+
+# IDEs
+.vscode/
+.idea/
+
+# System files
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
