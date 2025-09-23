@@ -1,3 +1,4 @@
+'''
 # 📝 Ejercicio: Sumar dos artículos y aplicar IVA
 
 # Pedimos los precios
@@ -14,6 +15,16 @@ IVA = 0.21
 total_con_iva = subtotal * (1 + IVA)
 
 # Mostramos resultados
-print("\n--- RESULTADO ---")
-print(f"Subtotal (sin IVA): {subtotal:.2f} €")
-print(f"Total con IVA (21%): {total_con_iva:.2f} €")
+if total_con_iva < 15:
+    print("\n--- RESULTADO ---")
+    print(f"Subtotal (sin IVA): {subtotal:.2f} €")
+    print(f"Total con IVA (21%): {total_con_iva:.2f} €")
+else:
+    print("no se puede comprar")
+
+'''
+cuenta = 10
+while cuenta != 0:
+    cuenta -= 1
+    print(cuenta)
+print("¡Despegue!")
