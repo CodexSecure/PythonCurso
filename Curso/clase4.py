@@ -1,4 +1,3 @@
-'''
 # 📝 Ejercicio: Sumar dos artículos y aplicar IVA
 
 # Pedimos los precios
@@ -21,10 +20,3 @@ if total_con_iva < 15:
     print(f"Total con IVA (21%): {total_con_iva:.2f} €")
 else:
     print("no se puede comprar")
-
-'''
-cuenta = 10
-while cuenta != 0:
-    cuenta -= 1
-    print(cuenta)
-print("¡Despegue!")
