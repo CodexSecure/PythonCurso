@@ -27,6 +27,13 @@ def decidir_vuelo(pasajeros):
         # math.ceil redondea hacia arriba: ej. 200/150 = 1.33 → 2 aviones
         aviones_necesarios = math.ceil(pasajeros / max_avion)
         
+        # Verificamos si sobran pasajeros para otro avión
+        # % es el operador módulo (resto de la división) ej. 375 % 150 = 75
+        pasajeros_extra = pasajeros % max_avion
+        if pasajeros_extra < min_pasajeros:
+            return(f"{pasajeros} pasajeros → ¡Demasiados para un avión!"
+                f"Se necesitan {aviones_necesarios - 1} aviones. Faltan {min_pasajeros - pasajeros_extra} pasajeros para otro avión.")
+
         return (f"{pasajeros} pasajeros → ¡Demasiados para un avión!"
                 f"Se necesitan {aviones_necesarios} aviones.")
     
@@ -42,6 +49,7 @@ print("\n--- Usando if-elif-else ---\n")
 
 print(decidir_vuelo(10))     # Menos de 25 → No vale la pena
 print(decidir_vuelo(100))    # Entre 25 y 150 → Un avión suficiente
+print(decidir_vuelo(160))    # Mas de 150 → Pero no llega al segundo avión 
 print(decidir_vuelo(200))    # Más de 150 → Se necesitan 2 aviones
 print(decidir_vuelo(375))    # Más de 150 → Se necesitan 3 aviones
 
