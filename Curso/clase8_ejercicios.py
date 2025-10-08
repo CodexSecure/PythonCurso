@@ -26,20 +26,41 @@ for palabra in frase.split():
 
 
 """
-Crea una lista e inicializala con 5 cadenas de caracteres leídas por teclado. 
-Copia los elementos de la lista en otra lista pero en orden inverso, y muestra sus elementos por la pantalla.
+Crea una lista e inicialízala con 5 cadenas de caracteres leídas por teclado. 
+Copia los elementos de la lista en otra lista pero en orden inverso, 
+y muestra sus elementos por pantalla.
 """
 
-lista = []         # Guardará los números en el orden introducido
-nuevalista = []    # Guardará los números en orden inverso
+# Lista donde guardaremos las cadenas en el orden en que las introduce el usuario
+lista = []
 
-for x in range(5):
-    lista.append(input(f"Introduce la cadena de caracteres # {x+1}: "))  
-    # Con input() pedimos un número al usuario y lo añadimos a la lista con append()
+# Lista donde guardaremos las cadenas en orden inverso
+nuevalista = []
 
-# Creamos una nueva lista con los elementos de 'lista' pero en orden inverso
-nuevalista = list(reversed(lista))  # reversed() devuelve un iterador, list() lo convierte en lista
+# --- Lectura de datos ---
+for x in range(5):  # Repetimos 5 veces para pedir 5 cadenas
+    valores = input(f"Introduce la cadena de caracteres #{x + 1}: ")    
+    lista.append(valores)  # Agregamos cada cadena a la lista original
 
+# --- Inversión de las cadenas y creación de la nueva lista ---
+for y in lista:
+    if len(y) > 1:  
+        # Si la cadena tiene más de un carácter, la invertimos
+        # y[::-1] → uso de slicing: recorre la cadena al revés (paso -1)
+        y = y[::-1]
+    # Agregamos la cadena (invertida o no) a la nueva lista
+    nuevalista.append(y)
+
+# --- Invertimos el orden de los elementos en la nueva lista ---
+# reversed() devuelve un iterador que recorre la lista al revés
+# list() lo convierte en una lista normal
+nuevalista = list(reversed(nuevalista))
+
+# --- Mostramos los resultados ---
+print("\nLista original:")
 print(lista)
+
+print("\nNueva lista (cadenas invertidas y en orden inverso):")
 print(nuevalista)
+
 
