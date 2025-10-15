@@ -1,3 +1,6 @@
+.gitignore
+
+
 # Python cache
 __pycache__/
 *.py[cod]
@@ -23,5 +26,3 @@ venv/
 Thumbs.db
 Desktop.ini
 $RECYCLE.BIN/
-
-*.gitignore
