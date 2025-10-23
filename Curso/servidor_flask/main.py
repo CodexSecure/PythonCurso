@@ -42,6 +42,19 @@ def hello_poteito():
 
     return respuesta
 
+@app.route("/html")
+def hello_html():
+    return """
+    <html>
+        <head>
+            <title>Mi pagina</title>
+        </head>
+        <body>
+            <h1>Hola mundo</h1>
+            <p>Esto es un parrafo</p>
+        </body>
+    </html>
+    """
 
 if __name__ == "__main__":
     app.run()

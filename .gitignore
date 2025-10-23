@@ -1,0 +1,4 @@
+# =====================
+# Ignorar la carpeta servidor_django
+# =====================
+servidor_django/
