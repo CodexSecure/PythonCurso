@@ -1,7 +1,7 @@
 # =====================
 # Ignorar la carpeta servidor_django
 # =====================
-servidor_django/
+curso/servidor_django/
 
 # =====================
 # Entornos virtuales
