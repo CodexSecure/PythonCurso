@@ -2,6 +2,7 @@
 # Ignorar la carpeta servidor_django
 # =====================
 curso/servidor_django/
+Proyectos_Python
 
 # =====================
 # Entornos virtuales

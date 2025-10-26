@@ -1,0 +1,139 @@
+¡Perfecto, Fidel! 😎 Vamos a hablar de **Tkinter** paso a paso.
+
+---
+
+## 1️⃣ Qué es Tkinter
+
+**Tkinter** es la biblioteca estándar de Python para crear **interfaces gráficas de usuario (GUI)**.
+
+* Es **incluida con Python**, no necesitas instalar nada adicional.
+* Te permite crear ventanas, botones, cuadros de texto, menús, y mucho más.
+* Funciona en Windows, Mac y Linux.
+
+En otras palabras, **Tkinter te ayuda a que tu programa Python tenga ventanas y botones**, en lugar de solo usar la terminal.
+
+---
+
+## 2️⃣ Conceptos clave
+
+* **Widget:** cualquier elemento de la interfaz: ventana, botón, etiqueta, caja de texto.
+* **Ventana principal:** la ventana que aparece al ejecutar tu programa.
+* **Event loop:** ciclo que mantiene la ventana abierta y responde a eventos (clics, teclas, etc.).
+
+---
+
+## 3️⃣ Ejemplo básico
+
+```python
+import tkinter as tk
+
+# Crear la ventana principal
+ventana = tk.Tk()
+ventana.title("Mi primera GUI")
+ventana.geometry("300x200")  # ancho x alto
+
+# Crear una etiqueta
+etiqueta = tk.Label(ventana, text="¡Hola, Tkinter!")
+etiqueta.pack(pady=20)  # agregamos la etiqueta a la ventana
+
+# Crear un botón
+def saludar():
+    print("¡Hola desde el botón!")
+
+boton = tk.Button(ventana, text="Saludar", command=saludar)
+boton.pack()
+
+# Mantener la ventana abierta
+ventana.mainloop()
+```
+
+---
+
+### 🔹 Qué hace este código
+
+1. Crea una ventana de 300x200 píxeles con título `"Mi primera GUI"`.
+2. Muestra una etiqueta con el texto `"¡Hola, Tkinter!"`.
+3. Muestra un botón que, al hacer clic, imprime un mensaje en la consola.
+4. `ventana.mainloop()` mantiene la ventana abierta y escuchando eventos.
+
+---
+
+### 4️⃣ Ventajas de Tkinter
+
+* Viene **incluido con Python** → no necesitas instalar librerías externas.
+* Fácil de aprender, ideal para proyectos pequeños y medianos.
+* Funciona en **cualquier sistema operativo**.
+
+---
+
+
+
+
+
+
+¡Sí, Fidel! 😎 Puedes convertir un programa de **Tkinter en un ejecutable** que funcione en Windows (o incluso en Mac/Linux con otros métodos).
+
+El método más común es usar **PyInstaller**, que empaqueta tu script de Python junto con el intérprete y las librerías necesarias.
+
+---
+
+## 1️⃣ Instalar PyInstaller
+
+Abre tu terminal o PowerShell y ejecuta:
+
+```bash
+pip install pyinstaller
+```
+
+---
+
+## 2️⃣ Crear el ejecutable
+
+Suponiendo que tu script se llama `info_pc.py`:
+
+```bash
+pyinstaller --onefile --windowed info_pc.py
+```
+
+Explicación de las opciones:
+
+* `--onefile` → crea un **solo archivo `.exe`** en lugar de muchas carpetas.
+* `--windowed` → evita que aparezca la consola negra al abrir la aplicación (ideal para GUI como Tkinter).
+
+---
+
+## 3️⃣ Ubicación del ejecutable
+
+* Después de ejecutar PyInstaller, se crean estas carpetas:
+
+```
+dist/
+build/
+info_pc.spec
+```
+
+* Tu ejecutable estará dentro de:
+
+```
+dist/info_pc.exe
+```
+
+* Ya puedes mover ese `.exe` a cualquier PC con Windows y ejecutarlo sin necesidad de Python instalado.
+
+---
+
+## 4️⃣ Consideraciones importantes
+
+1. **Icono personalizado:** puedes agregar un icono al exe con `--icon=mi_icono.ico`:
+
+```bash
+pyinstaller --onefile --windowed --icon=icono.ico info_pc.py
+```
+
+2. **Archivos adicionales:** si tu script usa archivos externos (imágenes, CSS, etc.), debes decirle a PyInstaller que los incluya.
+
+3. **Prueba en otra PC:** siempre prueba tu exe en un equipo que **no tenga Python** instalado para asegurarte de que funcione correctamente.
+
+---
+
+
